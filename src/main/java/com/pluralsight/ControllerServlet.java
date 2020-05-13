@@ -36,7 +36,7 @@ public class ControllerServlet extends HttpServlet {
 		public void destroy() {
 			dbConnection.disconnect();
 		}
-	public void olegTest() {
+	public void olegTest1() {
 			dbConnection.disconnect();
 		}
 

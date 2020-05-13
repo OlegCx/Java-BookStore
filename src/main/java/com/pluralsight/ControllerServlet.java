@@ -39,6 +39,9 @@ public class ControllerServlet extends HttpServlet {
 	public void olegTest123() {
 			dbConnection.disconnect();
 		}
+	public void Tatiana() {
+			dbConnection.disconnect();
+		}
 
     public ControllerServlet() {
         super();

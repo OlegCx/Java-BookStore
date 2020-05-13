@@ -42,6 +42,12 @@ public class ControllerServlet extends HttpServlet {
 	public void Tatiana1() {
 			dbConnection.disconnect();
 		}
+public void olegTest123() {
+			dbConnection.disconnect();
+		}
+	public void Tatiana1() {
+			dbConnection.disconnect();
+		}
 
     public ControllerServlet() {
         super();

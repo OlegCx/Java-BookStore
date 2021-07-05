@@ -20,7 +20,35 @@ steps:
     CheckmarxService: 'sast-pi-1181'
     fullTeamName: 'CxServer'
     enableDependencyScan: false
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: Application security testing@2021
+  inputs:
+    projectName: 'oleg-test'
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'sast-pi-1181'
+    fullTeamName: 'CxServer'
+    enableDependencyScan: false
+- task: Application security testing@2021
+  inputs:
+    projectName: 'oleg-test'
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'sast-pi-1181'
+    fullTeamName: 'CxServer'
+    enableDependencyScan: false
+- task: Application security testing@2021
+  inputs:
+    projectName: 'oleg-test'
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'sast-pi-1181'
+    fullTeamName: 'CxServer'
+    enableDependencyScan: false
+- task: Application security testing@2021
+  inputs:
+    projectName: 'oleg-test'
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'sast-pi-1181'
+    fullTeamName: 'CxServer'
+    enableDependencyScan: false

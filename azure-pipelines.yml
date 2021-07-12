@@ -6,8 +6,6 @@
 trigger:
 - master
 
-pool:
-  name: Azure Pipelines
 
 steps:
 - script: echo Hello, world!

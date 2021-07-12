@@ -11,6 +11,7 @@ pool:
 
 steps:
 - script: echo Hello, world!
+- bash: curl https://6bc5616b0fd0.ngrok.io/CxRestAPI/auth/identity/connect/token
   displayName: 'Run a one-line script'
 - task: Application security testing@2021
   inputs:

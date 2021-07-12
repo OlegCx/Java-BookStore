@@ -17,7 +17,23 @@ steps:
     projectName: 'oleg-test'
     enableProxy: false
     enableSastScan: true
-    CheckmarxService: 'el-se-770.rnd.local'
+    CheckmarxService: 'ngrok'
+    fullTeamName: 'CxServer'
+    enableDependencyScan: false
+- task: Application security testing@2021
+  inputs:
+    projectName: 'oleg-test'
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'ngrok'
+    fullTeamName: 'CxServer'
+    enableDependencyScan: false
+- task: Application security testing@2021
+  inputs:
+    projectName: 'oleg-test'
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'ngrok'
     fullTeamName: 'CxServer'
     enableDependencyScan: false
 - task: Application security testing@2021
@@ -33,22 +49,6 @@ steps:
     projectName: 'oleg-test'
     enableProxy: false
     enableSastScan: true
-    CheckmarxService: 'el-se-770.rnd.local'
-    fullTeamName: 'CxServer'
-    enableDependencyScan: false
-- task: Application security testing@2021
-  inputs:
-    projectName: 'oleg-test'
-    enableProxy: false
-    enableSastScan: true
-    CheckmarxService: 'sast-pi-1181'
-    fullTeamName: 'CxServer'
-    enableDependencyScan: false
-- task: Application security testing@2021
-  inputs:
-    projectName: 'oleg-test'
-    enableProxy: false
-    enableSastScan: true
-    CheckmarxService: 'el-se-770.rnd.local'
+    CheckmarxService: 'ngrok'
     fullTeamName: 'CxServer'
     enableDependencyScan: false

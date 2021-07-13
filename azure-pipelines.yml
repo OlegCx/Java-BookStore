@@ -11,7 +11,7 @@ pool:
 
 steps:
 - script: echo Hello, world!
-- script: Invoke-WebRequest -URI "http://el-se-770.rnd.local:8070/CxRestAPI/auth/"
+- script: powershell -command "Invoke-WebRequest -URI 'http://el-se-770.rnd.local:8070/CxRestAPI/auth/'"
   displayName: 'Run a one-line script'
 - task: Application security testing@2021
   inputs:

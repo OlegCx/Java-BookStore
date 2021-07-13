@@ -25,7 +25,7 @@ steps:
     projectName: 'oleg-test'
     enableProxy: false
     enableSastScan: true
-    CheckmarxService: 'ngrok'
+    CheckmarxService: 'el-se-770.rnd.local'
     fullTeamName: 'CxServer'
     enableDependencyScan: false
 - task: Application security testing@2021

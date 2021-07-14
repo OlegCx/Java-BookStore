@@ -18,14 +18,9 @@ steps:
     CheckmarxService: 'el-se-770.rnd.local'
     fullTeamName: 'CxServer'
     enableDependencyScan: false
-- task: Application security testing@2021
+- task: CmdLine@2
   inputs:
-    projectName: 'oleg-test'
-    enableProxy: false
-    enableSastScan: true
-    CheckmarxService: 'el-se-770.rnd.local'
-    fullTeamName: 'CxServer'
-    enableDependencyScan: false
+      script: rename $(Agent.BuildDirectory)\src $(Agent.BuildDirectory)\src$(Get-Date -Format yyyyMMddhhmmss)
 - task: Application security testing@2021
   inputs:
     projectName: 'oleg-test'

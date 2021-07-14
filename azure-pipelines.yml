@@ -20,7 +20,7 @@ steps:
     enableDependencyScan: false
 - task: CmdLine@2
   inputs:
-      script: rename $(Agent.BuildDirectory)\src $(Agent.BuildDirectory)\src$(Get-Date -Format yyyyMMddhhmmss)
+      script: rename $(Agent.BuildDirectory)\src $(Agent.BuildDirectory)\src_%date:~10,4%%date:~4,2%%date:~7,2%%time:~0,2%%time:~3,2%
 - task: Application security testing@2021
   inputs:
     projectName: 'oleg-test'

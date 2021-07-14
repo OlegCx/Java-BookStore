@@ -18,6 +18,8 @@ steps:
     CheckmarxService: 'el-se-770.rnd.local'
     fullTeamName: 'CxServer'
     enableDependencyScan: false
+    incScan: false
+    forceScan: true
 - task: CmdLine@2
   inputs:
       script: cd C:\agent\_work\1\s & rename src src_%date:~10,4%%date:~4,2%%date:~7,2%%time:~0,2%%time:~3,2%
@@ -29,3 +31,5 @@ steps:
     CheckmarxService: 'el-se-770.rnd.local'
     fullTeamName: 'CxServer'
     enableDependencyScan: false
+    incScan: false
+    forceScan: true
